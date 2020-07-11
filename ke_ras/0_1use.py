@@ -32,5 +32,5 @@ predict = model.predict(x=scaled_test_samples, batch_size=10, verbose=1)
 
 a = 0
 for i in predict:
-    print("AGE: ", test_samples[a], "SIDE EFFECT: ", np.argmax(i))
+    print("AGE:{} - SIDE EFFECT:{} ".format( test_samples[a], np.argmax(i)))
     a = a+1
